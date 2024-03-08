@@ -23,6 +23,8 @@ class Property(models.Model):
         [('north', 'North'), ('south', 'South'), ('east', 'East'), ('west', 'West')], 
         string="Garden Orientation", default='north')
     offer_ids = fields.One2many('estate.property.offer', 'property_id', string="Offers")
+    sales_id = fields.Many2one('res.users', string="Salesman")
+    buyer_id = fields.Many2one('res.partner', string="Buyer")
 
 
 class PropertyType(models.Model):

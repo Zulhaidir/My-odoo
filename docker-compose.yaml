@@ -7,7 +7,7 @@ services:
     ports:
       - "8920:8069"
     tty: true
-    command: -- --dev=reload
+    command: -- --dev all
     volumes:
       - kjs10-web:/var/lib/odoo
       - ./config:/etc/odoo
