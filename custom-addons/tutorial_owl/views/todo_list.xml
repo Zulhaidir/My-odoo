@@ -1,0 +1,54 @@
+<odoo>
+  <data>
+    <!--Tree py-->
+    <record model="ir.ui.view" id="owl_todo_tree_form_view">
+      <field name="name">owl.todo.tree.form.view</field>
+      <field name="model">owl.todo.list</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="color" widget="color"/>
+          <field name="completed"/>
+        </tree>
+      </field>
+    </record>
+
+    <!--Form py-->
+    <record model="ir.ui.view" id="owl_todo_list_form_view">
+      <field name="name">owl.todo.list.form.view</field>
+      <field name="model">owl.todo.list</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <field name="name"/>
+              <field name="color" widget="color"/>
+              <field name="completed"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- Action py -->
+    <record model="ir.actions.act_window" id="action_owl_todo_list">
+      <field name="name">Todo List</field>
+      <field name="res_model">owl.todo.list</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Action js(OWL)-->
+    <record id="action_todo_list_js" model="ir.actions.client">
+        <field name="name">Todo List OWL</field>
+        <field name="tag">tutorial_owl.action_todo_list_js</field>
+        <field name="params" eval="&quot;{ 'default_active_id': 'mail.box_inbox' }&quot;"/>
+    </record>
+
+    <!-- Menu -->
+    <menuitem name="OWL Tutorial" id="menu_owl_tutorial" sequence="10">
+      <menuitem name="Todo List" id="menu_owl_todo_list" sequence="10" action="action_owl_todo_list"/>
+      <menuitem name="Todo List OWL" id="menu_owl_todo_list_js" sequence="10" action="action_todo_list_js"/>
+    </menuitem>
+
+  </data>
+</odoo>

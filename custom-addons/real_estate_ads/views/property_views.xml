@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Tree Property -->
+        <record id="estate_property_tree_view" model="ir.ui.view">
+            <field name="name">estate.property.tree</field>
+            <field name="model">estate.property</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="type_id"/>
+                    <field name="postcode"/>
+                    <field name="data_availability"/>
+                    <field name="expected_price"/>
+                    <field name="best_offer"/>
+                    <field name="selling_price"/>
+                </tree>
+            </field>
+        </record>
+
+         <!-- Form Property -->
+        <record id="estate_property_form_view" model="ir.ui.view">
+            <field name="name">estate.property.form</field>
+            <field name="model">estate.property</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <group>
+                                <field name="type_id"/>
+                                <field name="postcode"/>
+                                <field name="data_availability"/>
+                            </group>
+                            <group>
+                                <field name="expected_price"/>
+                                <field name="best_offer"/>
+                                <field name="selling_price"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action Property -->
+        <record id="action_property" model="ir.actions.act_window">
+            <field name="name">Property</field>
+            <field name="res_model">estate.property</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="estate_property_tree_view"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Buat Property Advertise !!!
+                </p>
+            </field>
+        </record>
+
+
+        <!-- root menu -->
+        <menuitem
+            id="menu_root_property_ads"
+            name="Property Ads"
+            web_icon="real_estate_ads,static/description/icon.png"/>
+
+        <!-- menu 1 property  -->
+        <menuitem
+            id="menu_property_ads"
+            name="Ads"
+            sequence="1"
+            parent="menu_root_property_ads"/>
+
+        <!-- submenu property -->
+        <menuitem
+            id="menu_property"
+            name="Property"
+            action="action_property"
+            parent="menu_property_ads"/>
+        
+    </data>
+</odoo>

@@ -1,0 +1,28 @@
+version: '2'
+services:
+  web:
+    image: odoo:16
+    depends_on:
+      - db
+    ports:
+      - "8920:8069"
+    tty: true
+    command: -- --dev=reload
+    volumes:
+      - kjs10-web:/var/lib/odoo
+      - ./config:/etc/odoo
+      - ./custom-addons:/mnt/extra-addons
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - kjs10-db:/var/lib/postgresql/data/pgdata
+    ports:
+      - "3218:5432"
+volumes:
+  kjs10-web:
+  kjs10-db:
