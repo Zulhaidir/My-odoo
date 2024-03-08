@@ -40623,3 +40623,1500 @@ TypeError: unsupported operand type(s) for +: 'bool' and 'datetime.timedelta'
 2024-03-08 15:28:30,628 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:28:30] "POST /web/dataset/call_kw/estate.property/read HTTP/1.1" 200 - 13 0.035 0.024
 2024-03-08 15:28:30,657 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:28:30] "POST /web/dataset/call_kw/estate.property.tag/read HTTP/1.1" 200 - 6 0.005 0.008
 2024-03-08 15:28:30,662 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:28:30] "POST /web/dataset/call_kw/estate.property.offer/read HTTP/1.1" 200 - 6 0.006 0.009
+2024-03-08 15:32:00,418 1 INFO test_odoo16 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2024-03-08 15:32:00,434 1 INFO test_odoo16 odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2024-03-08 15:37:29,296 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:37:29,296 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:37:29,531 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-03-08 15:37:31,266 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:37:31,267 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:37:31,268 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:37:31,269 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:37:31,270 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:37:31,271 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:37:31,418 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:37:31,671 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:37:31,672 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:37:31,672 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:37:32,186 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:37:32,192 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:37:35,906 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:37:35,921 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:37:35,925 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:37:35,980 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:37:36,716 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.74s, 0 queries (+0 extra) 
+2024-03-08 15:37:36,878 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:37:36,928 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:37:36,930 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:37:36,938 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.076s 
+2024-03-08 15:37:36,941 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:37:37,194 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:37:37] "GET /websocket HTTP/1.1" 101 - 29 0.034 1.302
+2024-03-08 15:37:37,202 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:37:53,084 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:37:53,086 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:37:53,450 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2024-03-08 15:37:55,058 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:37:55,058 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:37:55,059 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:37:55,060 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:37:55,060 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:37:55,060 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:37:55,255 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:37:55,525 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:37:55,526 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:37:55,526 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:37:55,894 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:37:55,899 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:37:59,823 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:37:59,839 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:37:59,844 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:37:59,897 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:38:00,675 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.78s, 0 queries (+0 extra) 
+2024-03-08 15:38:00,874 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:38:00,925 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:38:00,927 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:38:00,936 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.141s 
+2024-03-08 15:38:00,940 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:38:01,246 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:38:01] "GET /websocket HTTP/1.1" 101 - 29 0.032 1.423
+2024-03-08 15:38:01,259 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:38:12,659 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:38:12,660 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:38:12,875 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2024-03-08 15:38:14,370 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:38:14,371 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:38:14,380 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:38:14,382 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:38:14,382 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:38:14,382 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:38:14,531 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:38:14,810 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:38:14,811 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:38:14,812 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:38:15,276 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:38:15,281 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:38:16,578 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:38:16,579 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:38:16,786 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  
+2024-03-08 15:38:18,489 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:38:18,490 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:38:18,491 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:38:18,492 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:38:18,492 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:38:18,492 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:38:18,654 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:38:18,905 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:38:18,906 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:38:18,907 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:38:19,259 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:38:19,261 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:38:22,821 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:38:22,835 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:38:22,839 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:38:22,888 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:38:23,784 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.90s, 0 queries (+0 extra) 
+2024-03-08 15:38:23,953 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:38:24,003 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:38:24,005 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:38:24,015 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.229s 
+2024-03-08 15:38:24,020 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:38:24,315 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:38:24] "GET /websocket HTTP/1.1" 101 - 29 0.032 1.501
+2024-03-08 15:38:24,325 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:38:56,445 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:38:56] "POST /web/action/load HTTP/1.1" 200 - 19 0.011 0.286
+2024-03-08 15:38:56,567 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:38:56] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 59 0.045 0.070
+2024-03-08 15:38:56,658 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:38:56] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 9 0.022 0.033
+2024-03-08 15:38:56,826 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:38:56] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 92 0.194 0.043
+2024-03-08 15:38:59,327 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:38:59,329 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:38:59,329 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:39:00,830 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:39:00,906 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:39:00,929 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2024-03-08 15:39:00,963 1 INFO test_odoo16 odoo.modules.loading: updating modules list 
+2024-03-08 15:39:00,967 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.20.0.1 
+2024-03-08 15:39:02,005 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:39:02,016 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:39:02,016 1 INFO test_odoo16 odoo.modules.loading: Loading module real_estate_ads (2/76) 
+2024-03-08 15:39:02,058 1 INFO test_odoo16 odoo.modules.registry: module real_estate_ads: creating or updating database tables 
+2024-03-08 15:39:02,156 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/security/ir.model.access.csv 
+2024-03-08 15:39:02,179 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_views.xml 
+2024-03-08 15:39:02,250 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_type_view.xml 
+2024-03-08 15:39:02,297 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_tag_view.xml 
+2024-03-08 15:39:02,375 1 INFO test_odoo16 odoo.modules.loading: Module real_estate_ads loaded in 0.36s, 192 queries (+192 other) 
+2024-03-08 15:39:02,459 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.44s, 192 queries (+192 extra) 
+2024-03-08 15:39:02,462 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:39:02,466 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:39:02,467 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-08 15:39:02,469 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:39:02,475 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:39:02,475 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-08 15:39:02,674 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:39:02,884 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:39:02,943 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:39:03,342 1 INFO test_odoo16 odoo.modules.registry: verifying fields for every extended model 
+2024-03-08 15:39:04,180 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:39:04,197 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 3.325s 
+2024-03-08 15:39:04,199 1 INFO test_odoo16 odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-03-08 15:39:04,207 1 INFO test_odoo16 odoo.modules.registry: Registry changed, signaling through the database 
+2024-03-08 15:39:04,210 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:04] "POST /web/dataset/call_button HTTP/1.1" 200 - 3784 2.774 2.118
+2024-03-08 15:39:04,229 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:39:05,392 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2024-03-08 15:39:05,394 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2024-03-08 15:39:05,396 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2024-03-08 15:39:05,403 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:05] "GET /web HTTP/1.1" 200 - 163 0.115 1.064
+2024-03-08 15:39:06,166 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:06] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 16 0.012 0.013
+2024-03-08 15:39:06,231 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:06] "POST /web/action/load HTTP/1.1" 200 - 13 0.014 0.020
+2024-03-08 15:39:06,244 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:06] "GET /websocket HTTP/1.1" 101 - 2 0.005 0.027
+2024-03-08 15:39:06,271 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:06] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 20 0.035 0.039
+2024-03-08 15:39:06,529 1 INFO ? werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:06] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 0.010
+2024-03-08 15:39:06,584 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:06] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 33 0.063 0.034
+2024-03-08 15:39:06,641 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:06] "POST /mail/init_messaging HTTP/1.1" 200 - 75 0.098 0.059
+2024-03-08 15:39:06,687 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:06] "POST /mail/inbox/messages HTTP/1.1" 200 - 13 0.016 0.009
+2024-03-08 15:39:06,700 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:06] "POST /mail/load_message_failures HTTP/1.1" 200 - 13 0.019 0.017
+2024-03-08 15:39:08,817 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:08] "POST /web/action/load HTTP/1.1" 200 - 13 0.016 0.026
+2024-03-08 15:39:08,877 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:08] "POST /web/dataset/call_kw/estate.property/get_views HTTP/1.1" 200 - 32 0.022 0.031
+2024-03-08 15:39:08,907 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:08] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 4 0.005 0.006
+2024-03-08 15:39:08,916 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:08] "POST /web/dataset/call_kw/estate.property/web_search_read HTTP/1.1" 200 - 10 0.011 0.010
+2024-03-08 15:39:11,323 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:11] "POST /web/dataset/call_kw/estate.property/onchange HTTP/1.1" 200 - 4 0.003 0.010
+2024-03-08 15:39:20,056 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:20] "POST /web/dataset/call_kw/estate.property/onchange HTTP/1.1" 200 - 3 0.003 0.011
+2024-03-08 15:39:24,035 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:39:24] "POST /web/dataset/call_kw/estate.property/onchange HTTP/1.1" 200 - 3 0.004 0.012
+2024-03-08 15:40:33,506 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:40:33,507 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:40:33,677 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-03-08 15:40:35,246 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:40:35,247 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:40:35,248 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:40:35,249 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:40:35,249 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:40:35,250 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:40:35,397 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:40:35,672 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:40:35,673 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:40:35,673 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:40:36,173 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:40:36,178 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:40:38,897 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:40:38,911 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:40:38,916 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:40:38,967 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:40:39,700 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.73s, 0 queries (+0 extra) 
+2024-03-08 15:40:39,870 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:40:39,916 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:40:39,917 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:40:39,926 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.067s 
+2024-03-08 15:40:39,929 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:40:40,197 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:40:40] "GET /websocket HTTP/1.1" 101 - 29 0.032 1.313
+2024-03-08 15:40:40,209 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:41:10,795 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:41:10,795 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:41:10,964 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2024-03-08 15:41:12,488 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:41:12,489 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:41:12,489 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:41:12,490 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:41:12,490 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:41:12,491 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:41:12,666 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:41:12,995 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:41:12,996 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:41:12,996 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:41:13,358 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:41:13,359 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:41:16,796 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:41:16,809 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:41:16,812 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:41:16,859 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:41:17,571 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.71s, 0 queries (+0 extra) 
+2024-03-08 15:41:17,734 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:41:17,777 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:41:17,779 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:41:17,786 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.017s 
+2024-03-08 15:41:17,790 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:41:18,054 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:41:18] "GET /websocket HTTP/1.1" 101 - 29 0.029 1.260
+2024-03-08 15:41:18,063 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:41:28,098 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:41:28,099 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:41:28,345 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2024-03-08 15:41:29,171 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:41:29,172 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:41:29,173 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:41:29,174 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:41:29,174 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:41:29,175 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:41:29,320 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:41:29,557 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:41:29,557 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:41:29,558 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:41:30,034 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:41:30,039 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:41:30,364 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:41:30,378 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:41:30,383 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:41:30,430 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:41:31,160 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.73s, 0 queries (+0 extra) 
+2024-03-08 15:41:31,316 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:41:31,365 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:41:31,366 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:41:31,374 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.033s 
+2024-03-08 15:41:31,377 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:41:31,791 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:41:31] "GET /websocket HTTP/1.1" 101 - 29 0.029 1.422
+2024-03-08 15:41:31,800 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:41:45,720 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:41:45,722 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:41:45,923 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2024-03-08 15:41:47,427 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:41:47,428 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:41:47,429 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:41:47,429 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:41:47,430 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:41:47,430 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:41:47,624 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:41:47,866 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:41:47,867 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:41:47,868 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:41:48,223 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:41:48,227 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:41:52,121 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:41:52,137 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2024-03-08 15:41:52,141 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:41:52,190 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:41:52,937 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.75s, 0 queries (+0 extra) 
+2024-03-08 15:41:53,100 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:41:53,175 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:41:53,177 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:41:53,186 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.103s 
+2024-03-08 15:41:53,190 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:41:53,516 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:41:53] "GET /websocket HTTP/1.1" 101 - 29 0.032 1.406
+2024-03-08 15:41:53,524 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:41:58,122 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:41:58,126 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:41:58,650 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2024-03-08 15:42:00,303 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:42:00,304 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:42:00,305 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:42:00,305 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:42:00,306 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:42:00,306 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:42:00,481 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:42:00,770 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:42:00,771 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:42:00,771 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:42:01,126 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:42:01,127 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:42:03,687 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:42:03,699 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:42:03,704 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:42:03,749 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:42:04,485 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.73s, 0 queries (+0 extra) 
+2024-03-08 15:42:04,655 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:42:04,706 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:42:04,708 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:42:04,716 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.084s 
+2024-03-08 15:42:04,720 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:42:04,997 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:04] "GET /websocket HTTP/1.1" 101 - 29 0.039 1.330
+2024-03-08 15:42:05,010 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:42:05,298 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:05] "POST /web/action/load HTTP/1.1" 200 - 20 0.015 0.314
+2024-03-08 15:42:07,350 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:07] "POST /web/dataset/call_kw/estate.property/web_search_read HTTP/1.1" 200 - 10 0.007 0.007
+2024-03-08 15:42:09,832 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:09] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 59 0.038 0.070
+2024-03-08 15:42:09,883 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:09] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 9 0.011 0.021
+2024-03-08 15:42:09,952 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:09] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 92 0.078 0.026
+2024-03-08 15:42:13,143 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:42:13,146 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:42:13,147 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:42:14,654 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:42:14,708 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:42:14,722 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:42:14,762 1 INFO test_odoo16 odoo.modules.loading: updating modules list 
+2024-03-08 15:42:14,767 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.20.0.1 
+2024-03-08 15:42:15,762 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:42:15,773 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:42:15,774 1 INFO test_odoo16 odoo.modules.loading: Loading module real_estate_ads (2/76) 
+2024-03-08 15:42:15,815 1 INFO test_odoo16 odoo.modules.registry: module real_estate_ads: creating or updating database tables 
+2024-03-08 15:42:15,914 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/security/ir.model.access.csv 
+2024-03-08 15:42:15,941 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_views.xml 
+2024-03-08 15:42:15,997 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_type_view.xml 
+2024-03-08 15:42:16,040 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_tag_view.xml 
+2024-03-08 15:42:16,096 1 INFO test_odoo16 odoo.modules.loading: Module real_estate_ads loaded in 0.32s, 189 queries (+189 other) 
+2024-03-08 15:42:16,166 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.39s, 189 queries (+189 extra) 
+2024-03-08 15:42:16,167 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:42:16,172 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:42:16,173 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-08 15:42:16,176 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:42:16,182 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:42:16,183 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-08 15:42:16,361 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:42:16,543 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:42:16,596 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:42:16,989 1 INFO test_odoo16 odoo.modules.registry: verifying fields for every extended model 
+2024-03-08 15:42:17,806 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:42:17,828 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 3.134s 
+2024-03-08 15:42:17,831 1 INFO test_odoo16 odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-03-08 15:42:17,852 1 INFO test_odoo16 odoo.modules.registry: Registry changed, signaling through the database 
+2024-03-08 15:42:17,856 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:17] "POST /web/dataset/call_button HTTP/1.1" 200 - 3781 2.716 2.014
+2024-03-08 15:42:17,897 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:42:19,095 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2024-03-08 15:42:19,098 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2024-03-08 15:42:19,100 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2024-03-08 15:42:19,108 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:19] "GET /web HTTP/1.1" 200 - 163 0.108 1.109
+2024-03-08 15:42:19,828 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:19] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 16 0.011 0.011
+2024-03-08 15:42:19,894 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:19] "POST /web/action/load HTTP/1.1" 200 - 13 0.017 0.013
+2024-03-08 15:42:19,905 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:19] "GET /websocket HTTP/1.1" 101 - 2 0.004 0.026
+2024-03-08 15:42:19,924 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:19] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 20 0.032 0.032
+2024-03-08 15:42:20,137 1 INFO ? werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:20] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 0.011
+2024-03-08 15:42:20,182 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:20] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 33 0.051 0.032
+2024-03-08 15:42:20,245 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:20] "POST /mail/init_messaging HTTP/1.1" 200 - 75 0.093 0.056
+2024-03-08 15:42:20,295 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:20] "POST /mail/inbox/messages HTTP/1.1" 200 - 13 0.017 0.011
+2024-03-08 15:42:20,306 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:20] "POST /mail/load_message_failures HTTP/1.1" 200 - 13 0.019 0.022
+2024-03-08 15:42:24,755 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:24] "POST /web/action/load HTTP/1.1" 200 - 13 0.008 0.012
+2024-03-08 15:42:24,818 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:24] "POST /web/dataset/call_kw/estate.property/get_views HTTP/1.1" 200 - 32 0.022 0.035
+2024-03-08 15:42:24,874 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:24] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 4 0.002 0.005
+2024-03-08 15:42:24,881 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:24] "POST /web/dataset/call_kw/estate.property/web_search_read HTTP/1.1" 200 - 10 0.008 0.008
+2024-03-08 15:42:26,542 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:26] "POST /web/dataset/call_kw/estate.property/onchange HTTP/1.1" 200 - 4 0.002 0.007
+2024-03-08 15:42:29,244 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:29] "POST /web/dataset/call_kw/estate.property.offer/onchange HTTP/1.1" 200 - 4 0.003 0.006
+2024-03-08 15:42:33,130 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:33] "POST /web/dataset/call_kw/estate.property.offer/onchange HTTP/1.1" 200 - 3 0.002 0.006
+2024-03-08 15:42:39,599 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:42:39] "POST /web/dataset/call_kw/estate.property.offer/onchange HTTP/1.1" 200 - 3 0.002 0.010
+2024-03-08 15:43:01,236 1 INFO test_odoo16 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2024-03-08 15:43:01,255 1 INFO test_odoo16 odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2024-03-08 15:43:19,096 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:43:19,098 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:43:19,203 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-03-08 15:43:20,840 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:43:20,841 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:43:20,842 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:43:20,842 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:43:20,842 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:43:20,843 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:43:20,985 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:43:21,262 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:43:21,263 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:43:21,264 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:43:21,742 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:43:21,747 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:43:25,452 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:43:25,467 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:43:25,472 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:43:25,522 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:43:26,213 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:43:26,214 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:43:26,232 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.71s, 0 queries (+0 extra) 
+2024-03-08 15:43:26,386 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:43:26,430 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:43:26,432 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:43:26,439 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.033s 
+2024-03-08 15:43:26,443 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:43:26,715 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:26] "GET /websocket HTTP/1.1" 101 - 29 0.033 1.281
+2024-03-08 15:43:27,237 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 3 connections  
+2024-03-08 15:43:28,619 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:43:28,620 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:43:28,621 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:43:28,621 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:43:28,621 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:43:28,622 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:43:28,776 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:43:29,026 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:43:29,026 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:43:29,027 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:43:29,360 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:43:29,365 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:43:29,571 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:43:29,584 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:43:29,589 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:43:29,636 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:43:30,405 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.77s, 0 queries (+0 extra) 
+2024-03-08 15:43:30,577 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:43:30,628 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:43:30,629 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:43:30,639 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.087s 
+2024-03-08 15:43:30,643 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:43:30,969 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:30] "GET /websocket HTTP/1.1" 101 - 29 0.032 1.386
+2024-03-08 15:43:30,978 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:43:32,047 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:32] "POST /web/dataset/call_kw/estate.property/web_search_read HTTP/1.1" 200 - 13 0.007 0.339
+2024-03-08 15:43:34,513 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:34] "POST /web/action/load HTTP/1.1" 200 - 16 0.022 0.026
+2024-03-08 15:43:34,672 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:34] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 61 0.043 0.109
+2024-03-08 15:43:34,769 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:34] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 9 0.012 0.048
+2024-03-08 15:43:34,844 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:34] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 92 0.105 0.037
+2024-03-08 15:43:37,266 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:43:37,269 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:43:37,269 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:43:38,715 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:43:38,756 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:43:38,766 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:43:38,789 1 INFO test_odoo16 odoo.modules.loading: updating modules list 
+2024-03-08 15:43:38,792 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.20.0.1 
+2024-03-08 15:43:39,634 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:43:39,648 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:43:39,649 1 INFO test_odoo16 odoo.modules.loading: Loading module real_estate_ads (2/76) 
+2024-03-08 15:43:39,685 1 INFO test_odoo16 odoo.modules.registry: module real_estate_ads: creating or updating database tables 
+2024-03-08 15:43:39,782 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/security/ir.model.access.csv 
+2024-03-08 15:43:39,804 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_views.xml 
+2024-03-08 15:43:39,862 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_type_view.xml 
+2024-03-08 15:43:39,892 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_tag_view.xml 
+2024-03-08 15:43:39,954 1 INFO test_odoo16 odoo.modules.loading: Module real_estate_ads loaded in 0.31s, 187 queries (+187 other) 
+2024-03-08 15:43:40,024 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.38s, 187 queries (+187 extra) 
+2024-03-08 15:43:40,026 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:43:40,030 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:43:40,031 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-08 15:43:40,033 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:43:40,038 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:43:40,039 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-08 15:43:40,209 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:43:40,344 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:43:40,403 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:43:41,005 1 INFO test_odoo16 odoo.modules.registry: verifying fields for every extended model 
+2024-03-08 15:43:41,860 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:43:41,875 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 3.128s 
+2024-03-08 15:43:41,876 1 INFO test_odoo16 odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-03-08 15:43:41,885 1 INFO test_odoo16 odoo.modules.registry: Registry changed, signaling through the database 
+2024-03-08 15:43:41,887 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:41] "POST /web/dataset/call_button HTTP/1.1" 200 - 3779 2.765 1.868
+2024-03-08 15:43:41,905 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:43:42,930 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2024-03-08 15:43:42,932 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2024-03-08 15:43:42,934 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2024-03-08 15:43:42,943 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:42] "GET /web HTTP/1.1" 200 - 163 0.099 0.943
+2024-03-08 15:43:43,727 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:43] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 16 0.011 0.011
+2024-03-08 15:43:43,791 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:43] "POST /web/action/load HTTP/1.1" 200 - 13 0.016 0.017
+2024-03-08 15:43:43,803 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:43] "GET /websocket HTTP/1.1" 101 - 2 0.003 0.025
+2024-03-08 15:43:43,822 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:43] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 20 0.030 0.036
+2024-03-08 15:43:44,100 1 INFO ? werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:44] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 0.010
+2024-03-08 15:43:44,154 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:44] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 33 0.059 0.036
+2024-03-08 15:43:44,218 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:44] "POST /mail/init_messaging HTTP/1.1" 200 - 75 0.104 0.054
+2024-03-08 15:43:44,267 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:44] "POST /mail/inbox/messages HTTP/1.1" 200 - 13 0.018 0.012
+2024-03-08 15:43:44,274 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:44] "POST /mail/load_message_failures HTTP/1.1" 200 - 13 0.015 0.020
+2024-03-08 15:43:46,298 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:46] "POST /web/action/load HTTP/1.1" 200 - 13 0.014 0.020
+2024-03-08 15:43:46,358 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:46] "POST /web/dataset/call_kw/estate.property/get_views HTTP/1.1" 200 - 32 0.020 0.034
+2024-03-08 15:43:46,394 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:46] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 4 0.004 0.007
+2024-03-08 15:43:46,405 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:46] "POST /web/dataset/call_kw/estate.property/web_search_read HTTP/1.1" 200 - 10 0.011 0.011
+2024-03-08 15:43:49,610 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:49] "POST /web/dataset/call_kw/estate.property/onchange HTTP/1.1" 200 - 4 0.002 0.005
+2024-03-08 15:43:58,786 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:43:58] "POST /web/dataset/call_kw/estate.property/onchange HTTP/1.1" 200 - 3 0.002 0.009
+2024-03-08 15:44:11,101 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:44:11] "POST /web/dataset/call_kw/estate.property/onchange HTTP/1.1" 200 - 3 0.003 0.011
+2024-03-08 15:44:18,054 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:44:18] "POST /web/dataset/call_kw/estate.property.offer/onchange HTTP/1.1" 200 - 4 0.002 0.006
+2024-03-08 15:44:21,010 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:44:21] "POST /web/dataset/call_kw/estate.property.offer/onchange HTTP/1.1" 200 - 3 0.002 0.006
+2024-03-08 15:44:29,192 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:44:29] "POST /web/dataset/call_kw/estate.property.offer/onchange HTTP/1.1" 200 - 3 0.002 0.010
+2024-03-08 15:45:30,846 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:45:30,847 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:45:31,326 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-03-08 15:45:32,644 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:45:32,645 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:45:32,646 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:45:32,647 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:45:32,647 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:45:32,648 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:45:32,831 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:45:33,090 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:45:33,091 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:45:33,091 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:45:33,459 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:45:33,461 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:45:33,539 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:45:33,552 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:45:33,557 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:45:33,627 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:45:34,405 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.78s, 0 queries (+0 extra) 
+2024-03-08 15:45:34,555 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:45:34,607 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:45:34,609 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:45:34,616 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.098s 
+2024-03-08 15:45:34,619 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:45:34,900 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:34] "GET /websocket HTTP/1.1" 101 - 29 0.029 1.354
+2024-03-08 15:45:34,909 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:45:40,868 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:40] "POST /web/dataset/call_kw/estate.property/web_search_read HTTP/1.1" 200 - 13 0.008 0.308
+2024-03-08 15:45:43,160 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:43] "POST /web/action/load HTTP/1.1" 200 - 17 0.027 0.029
+2024-03-08 15:45:43,314 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:43] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 61 0.038 0.107
+2024-03-08 15:45:43,391 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:43] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 9 0.014 0.031
+2024-03-08 15:45:43,481 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:43] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 92 0.116 0.034
+2024-03-08 15:45:47,302 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:45:47,304 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:45:47,306 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:45:48,821 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:45:48,865 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:45:48,877 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:45:48,900 1 INFO test_odoo16 odoo.modules.loading: updating modules list 
+2024-03-08 15:45:48,902 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.20.0.1 
+2024-03-08 15:45:49,763 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:45:49,776 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:45:49,777 1 INFO test_odoo16 odoo.modules.loading: Loading module real_estate_ads (2/76) 
+2024-03-08 15:45:49,818 1 INFO test_odoo16 odoo.modules.registry: module real_estate_ads: creating or updating database tables 
+2024-03-08 15:45:49,927 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/security/ir.model.access.csv 
+2024-03-08 15:45:49,950 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_views.xml 
+2024-03-08 15:45:50,014 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_type_view.xml 
+2024-03-08 15:45:50,049 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_tag_view.xml 
+2024-03-08 15:45:50,106 1 INFO test_odoo16 odoo.modules.loading: Module real_estate_ads loaded in 0.33s, 189 queries (+189 other) 
+2024-03-08 15:45:50,209 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.43s, 189 queries (+189 extra) 
+2024-03-08 15:45:50,212 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:45:50,217 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:45:50,218 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-08 15:45:50,219 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:45:50,223 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:45:50,224 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-08 15:45:50,377 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:45:50,522 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:45:50,607 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:45:51,172 1 INFO test_odoo16 odoo.modules.registry: verifying fields for every extended model 
+2024-03-08 15:45:52,033 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:45:52,051 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 3.196s 
+2024-03-08 15:45:52,052 1 INFO test_odoo16 odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-03-08 15:45:52,061 1 INFO test_odoo16 odoo.modules.registry: Registry changed, signaling through the database 
+2024-03-08 15:45:52,064 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:52] "POST /web/dataset/call_button HTTP/1.1" 200 - 3781 2.780 1.991
+2024-03-08 15:45:52,082 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:45:53,177 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2024-03-08 15:45:53,179 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2024-03-08 15:45:53,181 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2024-03-08 15:45:53,190 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:53] "GET /web HTTP/1.1" 200 - 163 0.107 1.006
+2024-03-08 15:45:53,947 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:53] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 16 0.012 0.015
+2024-03-08 15:45:54,020 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:54] "POST /web/action/load HTTP/1.1" 200 - 13 0.025 0.014
+2024-03-08 15:45:54,035 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:54] "GET /websocket HTTP/1.1" 101 - 2 0.007 0.033
+2024-03-08 15:45:54,055 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:54] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 20 0.037 0.038
+2024-03-08 15:45:54,326 1 INFO ? werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:54] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 0.008
+2024-03-08 15:45:54,378 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:54] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 33 0.063 0.030
+2024-03-08 15:45:54,437 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:54] "POST /mail/init_messaging HTTP/1.1" 200 - 75 0.094 0.056
+2024-03-08 15:45:54,485 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:54] "POST /mail/inbox/messages HTTP/1.1" 200 - 13 0.016 0.010
+2024-03-08 15:45:54,492 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:54] "POST /mail/load_message_failures HTTP/1.1" 200 - 13 0.016 0.015
+2024-03-08 15:45:59,892 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:59] "POST /web/action/load HTTP/1.1" 200 - 13 0.011 0.018
+2024-03-08 15:45:59,957 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:59] "POST /web/dataset/call_kw/estate.property/get_views HTTP/1.1" 200 - 32 0.026 0.032
+2024-03-08 15:45:59,988 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:59] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 4 0.003 0.006
+2024-03-08 15:45:59,995 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:45:59] "POST /web/dataset/call_kw/estate.property/web_search_read HTTP/1.1" 200 - 10 0.010 0.008
+2024-03-08 15:46:02,145 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:46:02] "POST /web/dataset/call_kw/estate.property/onchange HTTP/1.1" 200 - 4 0.004 0.009
+2024-03-08 15:46:05,447 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:46:05] "POST /web/dataset/call_kw/estate.property.offer/onchange HTTP/1.1" 200 - 4 0.008 0.012
+2024-03-08 15:46:08,066 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:46:08] "POST /web/dataset/call_kw/estate.property.offer/onchange HTTP/1.1" 200 - 3 0.002 0.005
+2024-03-08 15:46:12,175 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:46:12] "POST /web/dataset/call_kw/estate.property.offer/onchange HTTP/1.1" 200 - 3 0.003 0.014
+2024-03-08 15:46:41,227 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:46:41,230 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:46:41,765 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-03-08 15:46:43,524 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:46:43,525 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:46:43,526 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:46:43,527 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:46:43,527 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:46:43,528 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:46:43,675 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:46:43,929 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:46:43,930 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:46:43,930 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:46:44,305 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:46:44,310 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:46:48,067 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:46:48,081 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:46:48,086 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:46:48,139 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:46:48,908 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.77s, 0 queries (+0 extra) 
+2024-03-08 15:46:49,069 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:46:49,118 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:46:49,120 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:46:49,128 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.089s 
+2024-03-08 15:46:49,132 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:46:49,398 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:46:49] "GET /websocket HTTP/1.1" 101 - 29 0.031 1.329
+2024-03-08 15:46:49,408 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:46:55,270 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:46:55,271 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:46:55,613 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2024-03-08 15:46:57,181 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:46:57,182 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:46:57,183 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:46:57,183 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:46:57,183 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:46:57,184 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:46:57,354 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:46:57,719 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:46:57,719 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:46:57,720 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:46:58,056 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:46:58,058 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:46:59,868 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:46:59,887 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2024-03-08 15:46:59,892 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:46:59,940 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:47:00,661 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.72s, 0 queries (+0 extra) 
+2024-03-08 15:47:00,868 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:47:00,917 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:47:00,919 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:47:00,927 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.099s 
+2024-03-08 15:47:00,931 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:47:01,215 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:01] "GET /websocket HTTP/1.1" 101 - 29 0.036 1.353
+2024-03-08 15:47:01,224 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:47:19,761 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:47:19,764 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:47:19,916 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2024-03-08 15:47:21,433 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:47:21,434 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:47:21,435 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:47:21,436 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:47:21,436 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:47:21,437 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:47:21,581 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:47:21,989 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:47:21,990 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:47:21,990 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:47:22,379 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:47:22,384 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:47:22,441 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:47:22,441 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:47:22,886 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  
+2024-03-08 15:47:24,212 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:47:24,213 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:47:24,213 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:47:24,214 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:47:24,214 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:47:24,215 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:47:24,360 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:47:24,721 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:47:24,723 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:47:24,724 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:47:25,077 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:47:25,083 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:47:25,191 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:47:25,202 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:47:25,206 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:47:25,263 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:47:26,052 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.79s, 0 queries (+0 extra) 
+2024-03-08 15:47:26,215 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:47:26,261 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:47:26,263 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:47:26,272 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.101s 
+2024-03-08 15:47:26,275 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:47:26,573 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:26] "GET /websocket HTTP/1.1" 101 - 29 0.028 1.375
+2024-03-08 15:47:26,584 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:47:33,221 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:33] "POST /web/dataset/call_kw/estate.property/web_search_read HTTP/1.1" 200 - 13 0.008 0.292
+2024-03-08 15:47:35,828 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:35] "POST /web/action/load HTTP/1.1" 200 - 17 0.018 0.026
+2024-03-08 15:47:35,971 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:35] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 61 0.039 0.097
+2024-03-08 15:47:36,041 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:36] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 9 0.013 0.030
+2024-03-08 15:47:36,120 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:36] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 92 0.101 0.031
+2024-03-08 15:47:38,680 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:47:38,682 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:47:38,683 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:47:40,127 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:47:40,165 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:47:40,175 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:47:40,198 1 INFO test_odoo16 odoo.modules.loading: updating modules list 
+2024-03-08 15:47:40,202 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.20.0.1 
+2024-03-08 15:47:41,079 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:47:41,090 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:47:41,091 1 INFO test_odoo16 odoo.modules.loading: Loading module real_estate_ads (2/76) 
+2024-03-08 15:47:41,130 1 INFO test_odoo16 odoo.modules.registry: module real_estate_ads: creating or updating database tables 
+2024-03-08 15:47:41,226 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/security/ir.model.access.csv 
+2024-03-08 15:47:41,260 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_views.xml 
+2024-03-08 15:47:41,332 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_type_view.xml 
+2024-03-08 15:47:41,378 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_tag_view.xml 
+2024-03-08 15:47:41,439 1 INFO test_odoo16 odoo.modules.loading: Module real_estate_ads loaded in 0.35s, 189 queries (+189 other) 
+2024-03-08 15:47:41,524 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.43s, 189 queries (+189 extra) 
+2024-03-08 15:47:41,526 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:47:41,532 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:47:41,533 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-08 15:47:41,537 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:47:41,542 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:47:41,543 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-08 15:47:41,708 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:47:41,894 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:47:41,969 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:47:42,362 1 INFO test_odoo16 odoo.modules.registry: verifying fields for every extended model 
+2024-03-08 15:47:43,388 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:47:43,402 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 3.248s 
+2024-03-08 15:47:43,404 1 INFO test_odoo16 odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-03-08 15:47:43,415 1 INFO test_odoo16 odoo.modules.registry: Registry changed, signaling through the database 
+2024-03-08 15:47:43,418 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:43] "POST /web/dataset/call_button HTTP/1.1" 200 - 3781 2.675 2.072
+2024-03-08 15:47:43,440 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:47:44,484 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2024-03-08 15:47:44,486 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2024-03-08 15:47:44,488 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2024-03-08 15:47:44,497 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:44] "GET /web HTTP/1.1" 200 - 163 0.102 0.960
+2024-03-08 15:47:45,253 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:45] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 16 0.012 0.011
+2024-03-08 15:47:45,322 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:45] "POST /web/action/load HTTP/1.1" 200 - 13 0.014 0.019
+2024-03-08 15:47:45,337 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:45] "GET /websocket HTTP/1.1" 101 - 2 0.005 0.030
+2024-03-08 15:47:45,366 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:45] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 20 0.051 0.028
+2024-03-08 15:47:45,601 1 INFO ? werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:45] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 0.006
+2024-03-08 15:47:45,664 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:45] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 33 0.061 0.034
+2024-03-08 15:47:45,724 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:45] "POST /mail/init_messaging HTTP/1.1" 200 - 75 0.097 0.059
+2024-03-08 15:47:45,779 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:45] "POST /mail/inbox/messages HTTP/1.1" 200 - 13 0.021 0.013
+2024-03-08 15:47:45,787 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:45] "POST /mail/load_message_failures HTTP/1.1" 200 - 13 0.020 0.021
+2024-03-08 15:47:54,973 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:54] "POST /web/action/load HTTP/1.1" 200 - 13 0.008 0.013
+2024-03-08 15:47:55,034 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:55] "POST /web/dataset/call_kw/estate.property/get_views HTTP/1.1" 200 - 32 0.023 0.031
+2024-03-08 15:47:55,066 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:55] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 4 0.004 0.005
+2024-03-08 15:47:55,076 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:55] "POST /web/dataset/call_kw/estate.property/web_search_read HTTP/1.1" 200 - 10 0.010 0.010
+2024-03-08 15:47:58,177 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:58] "POST /web/action/load HTTP/1.1" 200 - 15 0.015 0.023
+2024-03-08 15:47:58,274 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:58] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 55 0.031 0.058
+2024-03-08 15:47:58,312 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:58] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 9 0.009 0.011
+2024-03-08 15:47:58,412 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:47:58] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 91 0.090 0.032
+2024-03-08 15:48:00,839 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:48:00,841 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:48:00,843 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:48:02,473 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:48:02,539 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:48:02,584 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2024-03-08 15:48:02,656 1 INFO test_odoo16 odoo.modules.loading: updating modules list 
+2024-03-08 15:48:02,658 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.20.0.1 
+2024-03-08 15:48:03,552 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:48:03,572 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:48:03,573 1 INFO test_odoo16 odoo.modules.loading: Loading module real_estate_ads (2/76) 
+2024-03-08 15:48:03,615 1 INFO test_odoo16 odoo.modules.registry: module real_estate_ads: creating or updating database tables 
+2024-03-08 15:48:03,684 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/security/ir.model.access.csv 
+2024-03-08 15:48:03,700 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_views.xml 
+2024-03-08 15:48:03,761 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_type_view.xml 
+2024-03-08 15:48:03,791 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_tag_view.xml 
+2024-03-08 15:48:03,853 1 INFO test_odoo16 odoo.modules.loading: Module real_estate_ads loaded in 0.28s, 187 queries (+187 other) 
+2024-03-08 15:48:03,947 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.37s, 187 queries (+187 extra) 
+2024-03-08 15:48:03,949 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:48:03,953 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:48:03,954 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-08 15:48:03,956 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:48:03,960 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:48:03,961 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-08 15:48:04,125 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:48:04,318 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:48:04,365 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:48:04,783 1 INFO test_odoo16 odoo.modules.registry: verifying fields for every extended model 
+2024-03-08 15:48:05,795 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:48:05,813 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 3.305s 
+2024-03-08 15:48:05,815 1 INFO test_odoo16 odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-03-08 15:48:05,825 1 INFO test_odoo16 odoo.modules.registry: Registry changed, signaling through the database 
+2024-03-08 15:48:05,828 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:05] "POST /web/dataset/call_button HTTP/1.1" 200 - 3779 2.878 2.118
+2024-03-08 15:48:05,866 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:48:06,819 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2024-03-08 15:48:06,821 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2024-03-08 15:48:06,823 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2024-03-08 15:48:06,832 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:06] "GET /web HTTP/1.1" 200 - 163 0.097 0.873
+2024-03-08 15:48:07,523 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:07] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 16 0.012 0.012
+2024-03-08 15:48:07,580 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:07] "POST /web/action/load HTTP/1.1" 200 - 13 0.017 0.015
+2024-03-08 15:48:07,587 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:07] "GET /websocket HTTP/1.1" 101 - 2 0.004 0.016
+2024-03-08 15:48:07,624 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:07] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 20 0.037 0.039
+2024-03-08 15:48:07,913 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:07] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 33 0.067 0.032
+2024-03-08 15:48:07,962 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:07] "POST /mail/init_messaging HTTP/1.1" 200 - 75 0.092 0.058
+2024-03-08 15:48:08,011 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:08] "POST /mail/inbox/messages HTTP/1.1" 200 - 13 0.020 0.012
+2024-03-08 15:48:08,012 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:08] "POST /mail/load_message_failures HTTP/1.1" 200 - 13 0.015 0.017
+2024-03-08 15:48:10,094 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:10] "POST /web/action/load HTTP/1.1" 200 - 13 0.014 0.023
+2024-03-08 15:48:10,154 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:10] "POST /web/dataset/call_kw/estate.property/get_views HTTP/1.1" 200 - 32 0.021 0.030
+2024-03-08 15:48:10,198 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:10] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 4 0.002 0.005
+2024-03-08 15:48:10,209 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:10] "POST /web/dataset/call_kw/estate.property/web_search_read HTTP/1.1" 200 - 10 0.011 0.008
+2024-03-08 15:48:12,136 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:12] "POST /web/dataset/call_kw/estate.property/onchange HTTP/1.1" 200 - 4 0.003 0.007
+2024-03-08 15:48:21,980 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:21] "POST /web/dataset/call_kw/estate.property.tag/name_search HTTP/1.1" 200 - 7 0.005 0.007
+2024-03-08 15:48:23,069 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:23] "POST /web/dataset/call_kw/estate.property.tag/read HTTP/1.1" 200 - 6 0.016 0.019
+2024-03-08 15:48:26,154 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:26] "POST /web/dataset/call_kw/estate.property.type/name_search HTTP/1.1" 200 - 7 0.010 0.016
+2024-03-08 15:48:36,237 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:36] "POST /web/dataset/call_kw/estate.property/onchange HTTP/1.1" 200 - 3 0.005 0.011
+2024-03-08 15:48:39,603 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:39] "POST /web/dataset/call_kw/estate.property/onchange HTTP/1.1" 200 - 3 0.003 0.013
+2024-03-08 15:48:45,983 1 ERROR test_odoo16 odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2044, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1633, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 133, in retrying
+    result = func()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1660, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1864, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/usr/lib/python3/dist-packages/odoo/addons/website/models/ir_http.py", line 237, in _dispatch
+    response = super()._dispatch(endpoint)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 697, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 42, in call_kw
+    return self._call_kw(model, method, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 468, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 453, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/models.py", line 6573, in onchange
+    record._onchange_eval(name, field_onchange[name], result)
+  File "/usr/lib/python3/dist-packages/odoo/models.py", line 6284, in _onchange_eval
+    method_res = method(self)
+  File "/mnt/extra-addons/real_estate_ads/models/property_offer.py", line 23, in _onchange_deadline
+    rec.deadline = False
+NameError: name 'rec' is not defined
+2024-03-08 15:48:45,984 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:48:45] "POST /web/dataset/call_kw/estate.property.offer/onchange HTTP/1.1" 200 - 4 0.002 0.010
+2024-03-08 15:49:05,098 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:49:05,098 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:49:05,555 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-03-08 15:49:07,263 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:49:07,264 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:49:07,265 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:49:07,265 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:49:07,266 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:49:07,267 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:49:07,465 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:49:07,712 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:49:07,713 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:49:07,714 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:49:08,057 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:49:08,062 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:49:10,402 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:49:10,414 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:49:10,420 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:49:10,471 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:49:11,227 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.76s, 0 queries (+0 extra) 
+2024-03-08 15:49:11,384 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:49:11,429 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:49:11,431 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:49:11,438 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.060s 
+2024-03-08 15:49:11,442 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:49:11,732 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:11] "GET /websocket HTTP/1.1" 101 - 29 0.034 1.321
+2024-03-08 15:49:11,747 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:49:12,128 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:12] "POST /web/action/load HTTP/1.1" 200 - 19 0.011 0.532
+2024-03-08 15:49:12,157 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:12] "POST /web/dataset/call_kw/estate.property/create HTTP/1.1" 200 - 9 0.009 0.011
+2024-03-08 15:49:12,312 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:12] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 58 0.049 0.097
+2024-03-08 15:49:12,517 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:12] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 9 0.034 0.085
+2024-03-08 15:49:12,620 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:12] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 92 0.215 0.044
+2024-03-08 15:49:16,079 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:49:16,082 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:49:16,083 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:49:17,529 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-08 15:49:17,595 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:49:17,615 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2024-03-08 15:49:17,643 1 INFO test_odoo16 odoo.modules.loading: updating modules list 
+2024-03-08 15:49:17,647 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.20.0.1 
+2024-03-08 15:49:18,540 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:49:18,551 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:49:18,551 1 INFO test_odoo16 odoo.modules.loading: Loading module real_estate_ads (2/76) 
+2024-03-08 15:49:18,590 1 INFO test_odoo16 odoo.modules.registry: module real_estate_ads: creating or updating database tables 
+2024-03-08 15:49:18,691 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/security/ir.model.access.csv 
+2024-03-08 15:49:18,717 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_views.xml 
+2024-03-08 15:49:18,773 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_type_view.xml 
+2024-03-08 15:49:18,813 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_tag_view.xml 
+2024-03-08 15:49:18,863 1 INFO test_odoo16 odoo.modules.loading: Module real_estate_ads loaded in 0.31s, 187 queries (+187 other) 
+2024-03-08 15:49:18,937 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.39s, 187 queries (+187 extra) 
+2024-03-08 15:49:18,938 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:49:18,943 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:49:18,944 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-08 15:49:18,947 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:49:18,952 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:49:18,953 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-08 15:49:19,128 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:49:19,333 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:49:19,435 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:49:19,924 1 INFO test_odoo16 odoo.modules.registry: verifying fields for every extended model 
+2024-03-08 15:49:20,790 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:49:20,805 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 3.242s 
+2024-03-08 15:49:20,807 1 INFO test_odoo16 odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-03-08 15:49:20,816 1 INFO test_odoo16 odoo.modules.registry: Registry changed, signaling through the database 
+2024-03-08 15:49:20,819 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:20] "POST /web/dataset/call_button HTTP/1.1" 200 - 3779 2.716 2.035
+2024-03-08 15:49:20,837 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:49:21,874 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2024-03-08 15:49:21,877 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2024-03-08 15:49:21,878 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2024-03-08 15:49:21,887 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:21] "GET /web HTTP/1.1" 200 - 163 0.096 0.959
+2024-03-08 15:49:22,628 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:22] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 16 0.012 0.014
+2024-03-08 15:49:22,695 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:22] "POST /web/action/load HTTP/1.1" 200 - 13 0.014 0.018
+2024-03-08 15:49:22,711 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:22] "GET /websocket HTTP/1.1" 101 - 2 0.005 0.030
+2024-03-08 15:49:22,729 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:22] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 20 0.038 0.030
+2024-03-08 15:49:23,028 1 INFO ? werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:23] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 0.007
+2024-03-08 15:49:23,091 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:23] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 33 0.068 0.036
+2024-03-08 15:49:23,154 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:23] "POST /mail/init_messaging HTTP/1.1" 200 - 75 0.108 0.059
+2024-03-08 15:49:23,200 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:23] "POST /mail/inbox/messages HTTP/1.1" 200 - 13 0.018 0.012
+2024-03-08 15:49:23,207 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:23] "POST /mail/load_message_failures HTTP/1.1" 200 - 13 0.018 0.017
+2024-03-08 15:49:28,685 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:28] "POST /web/action/load HTTP/1.1" 200 - 13 0.015 0.023
+2024-03-08 15:49:28,755 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:28] "POST /web/dataset/call_kw/estate.property/get_views HTTP/1.1" 200 - 32 0.027 0.035
+2024-03-08 15:49:28,794 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:28] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 4 0.004 0.008
+2024-03-08 15:49:28,806 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:28] "POST /web/dataset/call_kw/estate.property/web_search_read HTTP/1.1" 200 - 10 0.015 0.010
+2024-03-08 15:49:31,228 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:31] "POST /web/dataset/call_kw/estate.property/read HTTP/1.1" 200 - 13 0.008 0.007
+2024-03-08 15:49:31,246 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:31] "POST /web/dataset/call_kw/estate.property.tag/read HTTP/1.1" 200 - 6 0.004 0.005
+2024-03-08 15:49:36,365 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:36] "POST /web/dataset/call_kw/estate.property.offer/onchange HTTP/1.1" 200 - 4 0.004 0.009
+2024-03-08 15:49:39,826 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:39] "POST /web/dataset/call_kw/estate.property.offer/onchange HTTP/1.1" 200 - 3 0.002 0.007
+2024-03-08 15:49:42,635 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:42] "POST /web/dataset/call_kw/estate.property.offer/onchange HTTP/1.1" 200 - 3 0.003 0.022
+2024-03-08 15:49:51,811 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:51] "POST /web/dataset/call_kw/estate.property/write HTTP/1.1" 200 - 10 0.008 0.015
+2024-03-08 15:49:51,836 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:51] "POST /web/dataset/call_kw/estate.property/read HTTP/1.1" 200 - 13 0.009 0.007
+2024-03-08 15:49:51,855 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:51] "POST /web/dataset/call_kw/estate.property.tag/read HTTP/1.1" 200 - 6 0.004 0.007
+2024-03-08 15:49:51,858 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:49:51] "POST /web/dataset/call_kw/estate.property.offer/read HTTP/1.1" 200 - 6 0.005 0.007
+2024-03-08 15:50:02,090 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:50:02] "POST /web/dataset/call_kw/estate.property.offer/onchange HTTP/1.1" 200 - 3 0.002 0.005
+2024-03-08 15:50:50,533 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:50:50,535 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:50:50,714 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-03-08 15:50:52,325 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:50:52,326 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:50:52,327 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:50:52,327 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:50:52,328 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:50:52,328 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:50:52,463 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:50:52,744 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:50:52,745 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:50:52,745 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:50:53,110 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:50:53,115 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:50:55,992 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:50:56,005 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:50:56,011 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:50:56,077 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:50:56,859 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.78s, 0 queries (+0 extra) 
+2024-03-08 15:50:57,026 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:50:57,069 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:50:57,071 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:50:57,080 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.132s 
+2024-03-08 15:50:57,083 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:50:57,331 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:50:57] "GET /websocket HTTP/1.1" 101 - 29 0.033 1.354
+2024-03-08 15:50:57,339 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:50:59,745 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:50:59,748 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:51:00,011 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2024-03-08 15:51:01,646 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:51:01,647 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:51:01,648 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:51:01,648 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:51:01,649 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:51:01,650 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:51:01,829 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:51:02,055 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:51:02,056 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:51:02,057 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:51:02,397 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:51:02,402 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:51:02,474 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:51:02,498 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2024-03-08 15:51:02,507 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:51:02,556 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:51:03,271 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.71s, 0 queries (+0 extra) 
+2024-03-08 15:51:03,448 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:51:03,494 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:51:03,496 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:51:03,505 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.052s 
+2024-03-08 15:51:03,508 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:51:03,926 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:51:03] "GET /websocket HTTP/1.1" 101 - 29 0.030 1.445
+2024-03-08 15:51:03,935 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-08 15:52:02,565 1 INFO test_odoo16 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2024-03-08 15:52:02,576 1 INFO test_odoo16 odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2024-03-08 15:52:28,123 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-08 15:52:28,124 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-08 15:52:28,648 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-03-08 15:52:30,264 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:52:30,265 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-08 15:52:30,266 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-08 15:52:30,267 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-08 15:52:30,267 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-08 15:52:30,268 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-08 15:52:30,447 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-08 15:52:30,685 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-08 15:52:30,686 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-08 15:52:30,687 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-08 15:52:31,056 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-08 15:52:31,061 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-08 15:52:35,148 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-08 15:52:35,161 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-08 15:52:35,166 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-08 15:52:35,218 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-08 15:52:36,104 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.89s, 0 queries (+0 extra) 
+2024-03-08 15:52:36,300 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-08 15:52:36,368 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-08 15:52:36,370 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-08 15:52:36,380 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.252s 
+2024-03-08 15:52:36,385 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-08 15:52:36,684 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [08/Mar/2024 15:52:36] "GET /websocket HTTP/1.1" 101 - 29 0.034 1.524
+2024-03-08 15:52:36,694 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
