@@ -35,6 +35,7 @@
     ],
     # only loaded in demonstration mode
     'demo': [
+        'demo/property_tag.xml',
     ],
     'sequence': -1,
     'installable': True,

@@ -43457,3 +43457,307 @@ NameError: name 'rec' is not defined
 2024-03-09 12:13:02,319 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:13:02] "POST /web/action/load HTTP/1.1" 200 - 13 0.018 0.026
 2024-03-09 12:13:02,357 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:13:02] "POST /web/dataset/call_kw/estate.property.type/get_views HTTP/1.1" 200 - 22 0.013 0.019
 2024-03-09 12:13:02,378 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:13:02] "POST /web/dataset/call_kw/estate.property.type/web_search_read HTTP/1.1" 200 - 9 0.005 0.005
+2024-03-09 12:22:10,353 1 INFO test_odoo16 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2024-03-09 12:22:10,373 1 INFO test_odoo16 odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2024-03-09 12:24:43,656 1 INFO ? odoo.service.server: autoreload: python code updated, autoreload activated 
+2024-03-09 12:24:43,659 1 INFO ? odoo.service.server: Initiating server reload 
+2024-03-09 12:24:44,039 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-03-09 12:24:45,784 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The osv-memory-age-limit is a deprecated alias to the transient-age-limit option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-09 12:24:45,784 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:566: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 379, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 566, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-03-09 12:24:45,785 1 INFO ? odoo: Odoo version 16.0-20240216 
+2024-03-09 12:24:45,785 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-03-09 12:24:45,786 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/16.0', '/mnt/extra-addons'] 
+2024-03-09 12:24:45,786 1 INFO ? odoo: database: odoo@db:5432 
+2024-03-09 12:24:45,964 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-03-09 12:24:46,214 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2024-03-09 12:24:46,215 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/.local/share/Odoo/addons/16.0 
+2024-03-09 12:24:46,215 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2024-03-09 12:24:46,548 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2024-03-09 12:24:46,552 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 5199f06c86b3:8069 
+2024-03-09 12:24:49,772 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-09 12:24:49,786 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-09 12:24:49,790 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-09 12:24:49,844 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-09 12:24:50,670 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.83s, 0 queries (+0 extra) 
+2024-03-09 12:24:50,842 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-09 12:24:50,888 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-09 12:24:50,889 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-09 12:24:50,896 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 1.155s 
+2024-03-09 12:24:50,900 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-09 12:24:51,204 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:24:51] "GET /websocket HTTP/1.1" 101 - 29 0.033 1.434
+2024-03-09 12:24:51,216 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-03-09 12:25:10,447 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:10] "POST /web/action/load HTTP/1.1" 200 - 20 0.014 0.296
+2024-03-09 12:25:10,590 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:10] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 61 0.036 0.099
+2024-03-09 12:25:10,713 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:10] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 9 0.034 0.049
+2024-03-09 12:25:10,809 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:10] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 92 0.147 0.055
+2024-03-09 12:25:13,094 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-09 12:25:13,102 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-09 12:25:13,104 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-09 12:25:14,627 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-09 12:25:14,668 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-09 12:25:14,679 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-09 12:25:14,705 1 INFO test_odoo16 odoo.modules.loading: updating modules list 
+2024-03-09 12:25:14,708 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.20.0.1 
+2024-03-09 12:25:15,720 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-09 12:25:15,734 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-09 12:25:15,735 1 INFO test_odoo16 odoo.modules.loading: Loading module real_estate_ads (2/76) 
+2024-03-09 12:25:15,773 1 INFO test_odoo16 odoo.modules.registry: module real_estate_ads: creating or updating database tables 
+2024-03-09 12:25:15,868 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/security/ir.model.access.csv 
+2024-03-09 12:25:15,894 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_views.xml 
+2024-03-09 12:25:15,950 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_type_view.xml 
+2024-03-09 12:25:16,001 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_tag_view.xml 
+2024-03-09 12:25:16,054 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/data/property_type_view.xml 
+2024-03-09 12:25:16,061 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/data/estate.property.type.csv 
+2024-03-09 12:25:16,096 1 INFO test_odoo16 odoo.modules.loading: Module real_estate_ads loaded in 0.36s, 201 queries (+201 other) 
+2024-03-09 12:25:16,172 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.44s, 201 queries (+201 extra) 
+2024-03-09 12:25:16,174 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-09 12:25:16,178 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-09 12:25:16,178 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-09 12:25:16,181 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-09 12:25:16,184 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-09 12:25:16,185 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-09 12:25:16,338 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-09 12:25:16,523 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-09 12:25:16,574 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-09 12:25:16,928 1 INFO test_odoo16 odoo.modules.registry: verifying fields for every extended model 
+2024-03-09 12:25:17,781 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-09 12:25:17,800 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 3.143s 
+2024-03-09 12:25:17,801 1 INFO test_odoo16 odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-03-09 12:25:17,810 1 INFO test_odoo16 odoo.modules.registry: Registry changed, signaling through the database 
+2024-03-09 12:25:17,813 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:17] "POST /web/dataset/call_button HTTP/1.1" 200 - 3793 2.664 2.077
+2024-03-09 12:25:17,830 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-09 12:25:18,854 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2024-03-09 12:25:18,856 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2024-03-09 12:25:18,858 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2024-03-09 12:25:18,867 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:18] "GET /web HTTP/1.1" 200 - 163 0.101 0.941
+2024-03-09 12:25:19,596 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:19] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 16 0.012 0.010
+2024-03-09 12:25:19,660 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:19] "POST /web/action/load HTTP/1.1" 200 - 13 0.016 0.017
+2024-03-09 12:25:19,673 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:19] "GET /websocket HTTP/1.1" 101 - 2 0.004 0.027
+2024-03-09 12:25:19,685 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:19] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 20 0.032 0.029
+2024-03-09 12:25:19,974 1 INFO ? werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:19] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 0.007
+2024-03-09 12:25:20,023 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:20] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 33 0.057 0.033
+2024-03-09 12:25:20,083 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:20] "POST /mail/init_messaging HTTP/1.1" 200 - 75 0.095 0.055
+2024-03-09 12:25:20,123 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:20] "POST /mail/inbox/messages HTTP/1.1" 200 - 13 0.012 0.009
+2024-03-09 12:25:20,139 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:20] "POST /mail/load_message_failures HTTP/1.1" 200 - 13 0.019 0.016
+2024-03-09 12:25:22,592 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:22] "POST /web/action/load HTTP/1.1" 200 - 13 0.013 0.022
+2024-03-09 12:25:22,655 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:22] "POST /web/dataset/call_kw/estate.property/get_views HTTP/1.1" 200 - 32 0.022 0.032
+2024-03-09 12:25:22,696 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:22] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 4 0.003 0.010
+2024-03-09 12:25:22,697 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:22] "POST /web/dataset/call_kw/estate.property/web_search_read HTTP/1.1" 200 - 6 0.008 0.008
+2024-03-09 12:25:27,455 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:27] "POST /web/action/load HTTP/1.1" 200 - 13 0.008 0.014
+2024-03-09 12:25:27,498 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:27] "POST /web/dataset/call_kw/estate.property.tag/get_views HTTP/1.1" 200 - 22 0.017 0.020
+2024-03-09 12:25:27,517 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:25:27] "POST /web/dataset/call_kw/estate.property.tag/web_search_read HTTP/1.1" 200 - 6 0.003 0.004
+2024-03-09 12:30:02,890 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:02] "POST /web/action/load HTTP/1.1" 200 - 15 0.010 0.019
+2024-03-09 12:30:02,983 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:02] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 55 0.028 0.054
+2024-03-09 12:30:03,036 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:03] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 9 0.006 0.011
+2024-03-09 12:30:03,180 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:03] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 91 0.131 0.034
+2024-03-09 12:30:18,912 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_uninstall_wizard on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-09 12:30:18,914 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:18] "POST /web/dataset/call_button HTTP/1.1" 200 - 5 0.003 0.009
+2024-03-09 12:30:18,959 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:18] "POST /web/dataset/call_kw/base.module.uninstall/get_views HTTP/1.1" 200 - 13 0.010 0.021
+2024-03-09 12:30:19,053 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:19] "POST /web/dataset/call_kw/base.module.uninstall/onchange HTTP/1.1" 200 - 18 0.026 0.024
+2024-03-09 12:30:19,071 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:19] "POST /web/dataset/call_kw/ir.module.module/read HTTP/1.1" 200 - 6 0.003 0.005
+2024-03-09 12:30:20,560 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:20] "POST /web/dataset/call_kw/base.module.uninstall/create HTTP/1.1" 200 - 6 0.007 0.011
+2024-03-09 12:30:20,608 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:20] "POST /web/dataset/call_kw/base.module.uninstall/read HTTP/1.1" 200 - 17 0.020 0.019
+2024-03-09 12:30:20,626 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:20] "POST /web/dataset/call_kw/ir.module.module/read HTTP/1.1" 200 - 6 0.004 0.005
+2024-03-09 12:30:20,648 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_uninstall on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-09 12:30:20,649 1 INFO test_odoo16 odoo.addons.base.models.ir_module: User #2 triggered module uninstallation 
+2024-03-09 12:30:20,651 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_uninstall on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-09 12:30:20,685 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-09 12:30:20,698 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-09 12:30:20,726 1 INFO test_odoo16 odoo.modules.loading: updating modules list 
+2024-03-09 12:30:20,729 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.20.0.1 
+2024-03-09 12:30:21,662 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-09 12:30:21,671 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-09 12:30:21,729 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.06s, 0 queries (+0 extra) 
+2024-03-09 12:30:21,870 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-09 12:30:22,002 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-09 12:30:22,066 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-09 12:30:22,080 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.module_uninstall on ['real_estate_ads'] to user __system__ #1 via 172.20.0.1 
+2024-03-09 12:30:22,089 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting estate.property.type(22, 21, 20, 19) 
+2024-03-09 12:30:22,147 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [78252, 78254, 78251, 78253] 
+2024-03-09 12:30:22,147 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted estate.property.type records with IDs: [22, 21, 20, 19] 
+2024-03-09 12:30:22,154 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.model.access(794,) 
+2024-03-09 12:30:22,165 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [30220] 
+2024-03-09 12:30:22,166 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [794] 
+2024-03-09 12:30:22,169 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.ui.menu(370,) 
+2024-03-09 12:30:22,182 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [29964] 
+2024-03-09 12:30:22,183 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [370] 
+2024-03-09 12:30:22,185 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.actions.act_window(461,) 
+2024-03-09 12:30:22,202 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [29963] 
+2024-03-09 12:30:22,203 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [461] 
+2024-03-09 12:30:22,205 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.ui.view(1484, 1483) 
+2024-03-09 12:30:22,260 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [29962, 29961] 
+2024-03-09 12:30:22,262 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1484, 1483] 
+2024-03-09 12:30:22,266 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.model.access(793,) 
+2024-03-09 12:30:22,284 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [29949] 
+2024-03-09 12:30:22,289 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [793] 
+2024-03-09 12:30:22,292 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.ui.menu(369, 368) 
+2024-03-09 12:30:22,308 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [29513, 29514] 
+2024-03-09 12:30:22,309 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [369, 368] 
+2024-03-09 12:30:22,311 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.actions.act_window(460,) 
+2024-03-09 12:30:22,324 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [29512] 
+2024-03-09 12:30:22,325 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [460] 
+2024-03-09 12:30:22,329 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.ui.view(1482, 1481) 
+2024-03-09 12:30:22,347 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [29511, 29510] 
+2024-03-09 12:30:22,348 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1482, 1481] 
+2024-03-09 12:30:22,350 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.model.access(792,) 
+2024-03-09 12:30:22,360 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [29206] 
+2024-03-09 12:30:22,360 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [792] 
+2024-03-09 12:30:22,363 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.ui.menu(364,) 
+2024-03-09 12:30:22,377 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [29124] 
+2024-03-09 12:30:22,377 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [364] 
+2024-03-09 12:30:22,380 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.ui.view(1480, 1479) 
+2024-03-09 12:30:22,400 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [27264, 27263] 
+2024-03-09 12:30:22,401 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1480, 1479] 
+2024-03-09 12:30:22,406 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.model.access(757,) 
+2024-03-09 12:30:22,419 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [27231] 
+2024-03-09 12:30:22,420 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [757] 
+2024-03-09 12:30:22,422 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.ui.menu(332, 330) 
+2024-03-09 12:30:22,435 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [27059, 27057] 
+2024-03-09 12:30:22,492 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1542] 
+2024-03-09 12:30:22,493 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [332, 330] 
+2024-03-09 12:30:22,495 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.actions.act_window(459,) 
+2024-03-09 12:30:22,508 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [27056] 
+2024-03-09 12:30:22,509 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [459] 
+2024-03-09 12:30:22,532 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Dropped FK CONSTRAINT estate_property_buyer_id_fkey@estate.property 
+2024-03-09 12:30:22,536 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Dropped FK CONSTRAINT estate_property_sales_id_fkey@estate.property 
+2024-03-09 12:30:22,541 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Dropped FK CONSTRAINT estate_property_offer_write_uid_fkey@estate.property.offer 
+2024-03-09 12:30:22,546 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Dropped FK CONSTRAINT estate_property_offer_create_uid_fkey@estate.property.offer 
+2024-03-09 12:30:22,549 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Dropped FK CONSTRAINT estate_property_offer_property_id_fkey@estate.property.offer 
+2024-03-09 12:30:22,552 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Dropped FK CONSTRAINT estate_property_offer_partner_id_fkey@estate.property.offer 
+2024-03-09 12:30:22,559 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Dropped FK CONSTRAINT estate_property_tag_write_uid_fkey@estate.property.tag 
+2024-03-09 12:30:22,564 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Dropped FK CONSTRAINT estate_property_tag_create_uid_fkey@estate.property.tag 
+2024-03-09 12:30:22,568 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Dropped FK CONSTRAINT estate_property_type_id_fkey@estate.property 
+2024-03-09 12:30:22,576 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Dropped FK CONSTRAINT estate_property_write_uid_fkey@estate.property 
+2024-03-09 12:30:22,582 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Dropped FK CONSTRAINT estate_property_create_uid_fkey@estate.property 
+2024-03-09 12:30:22,592 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.constraint records with IDs: [1966, 1967, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035, 2036, 2037, 2038] 
+2024-03-09 12:30:22,596 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.model.fields.selection(1192, 1191, 1190, 1189, 1188, 1187) 
+2024-03-09 12:30:22,613 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [27112, 27110, 27111, 27113, 30215, 30216] 
+2024-03-09 12:30:22,614 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.fields.selection records with IDs: [1192, 1191, 1190, 1189, 1188, 1187] 
+2024-03-09 12:30:22,621 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.model.fields(8861, 8859, 8857, 8856, 8855, 8854, 8751, 8750, 8748, 8747, 8746, 8745, 8744, 8743, 8738, 8737, 8735, 8734, 8729, 8728, 8726, 8446, 8445, 8444, 8443, 8442, 8441, 8440, 8439, 8438, 8437, 8436, 8434, 8433, 8428, 8427, 8425) 
+2024-03-09 12:30:22,996 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [27103, 27101, 76408, 27099, 27082, 27051, 27100, 27105, 27106, 27107, 27108, 27109, 27050, 27104, 27048, 76833, 76324, 30206, 30199, 30205, 30202, 30200, 30203, 30201, 76323, 27083, 76407, 27102, 29938, 30069, 29937, 29935, 76577, 29196, 29786, 29195, 29193] 
+2024-03-09 12:30:22,996 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [8861, 8859, 8857, 8856, 8855, 8854, 8751, 8750, 8748, 8747, 8746, 8745, 8744, 8743, 8738, 8737, 8735, 8734, 8729, 8728, 8726, 8446, 8445, 8444, 8443, 8442, 8441, 8440, 8439, 8438, 8437, 8436, 8434, 8433, 8428, 8427, 8425] 
+2024-03-09 12:30:23,006 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.relation records with IDs: [139] 
+2024-03-09 12:30:23,010 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Dropped table estate_property_estate_property_tag_rel 
+2024-03-09 12:30:23,011 1 INFO test_odoo16 odoo.addons.base.models.ir_model: Deleting ir.model(766, 764, 762, 697) 
+2024-03-09 12:30:23,097 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [27047, 30159, 29904, 29171] 
+2024-03-09 12:30:23,098 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model records with IDs: [766, 764, 762, 697] 
+2024-03-09 12:30:23,099 1 INFO test_odoo16 odoo.addons.base.models.ir_model: ir.model.data could not be deleted ([]) 
+2024-03-09 12:30:23,111 1 INFO test_odoo16 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [78254, 78253, 78252, 78251, 76833, 76577, 76408, 76407, 76324, 76323, 30220, 30216, 30215, 30210, 30209, 30208, 30207, 30206, 30205, 30204, 30203, 30202, 30201, 30200, 30199, 30159, 30069, 29964, 29963, 29962, 29961, 29949, 29942, 29941, 29940, 29939, 29938, 29937, 29936, 29935, 29904, 29786, 29514, 29513, 29512, 29511, 29510, 29206, 29200, 29199, 29198, 29197, 29196, 29195, 29194, 29193, 29171, 29124, 27264, 27263, 27231, 27113, 27112, 27111, 27110, 27109, 27108, 27107, 27106, 27105, 27104, 27103, 27102, 27101, 27100, 27099, 27083, 27082, 27059, 27057, 27056, 27055, 27054, 27053, 27052, 27051, 27050, 27049, 27048, 27047] 
+2024-03-09 12:30:23,127 1 INFO test_odoo16 odoo.modules.loading: Reloading registry once more after uninstalling modules 
+2024-03-09 12:30:23,136 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-09 12:30:23,148 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-09 12:30:23,182 1 INFO test_odoo16 odoo.modules.loading: updating modules list 
+2024-03-09 12:30:23,192 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.20.0.1 
+2024-03-09 12:30:24,126 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-09 12:30:24,140 1 INFO test_odoo16 odoo.modules.loading: loading 75 modules... 
+2024-03-09 12:30:24,227 1 INFO test_odoo16 odoo.modules.loading: 75 modules loaded in 0.09s, 0 queries (+0 extra) 
+2024-03-09 12:30:24,419 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-09 12:30:24,590 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-09 12:30:24,643 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-09 12:30:25,463 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-09 12:30:25,484 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 2.357s 
+2024-03-09 12:30:25,494 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 4.820s 
+2024-03-09 12:30:25,495 1 INFO test_odoo16 odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-03-09 12:30:25,504 1 INFO test_odoo16 odoo.modules.registry: Registry changed, signaling through the database 
+2024-03-09 12:30:25,507 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:25] "POST /web/dataset/call_button HTTP/1.1" 200 - 3363 2.397 2.476
+2024-03-09 12:30:25,526 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-09 12:30:26,323 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2024-03-09 12:30:26,326 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2024-03-09 12:30:26,327 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2024-03-09 12:30:26,334 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:26] "GET /web HTTP/1.1" 200 - 163 0.089 0.724
+2024-03-09 12:30:26,417 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:26] "GET /web/webclient/load_menus/4e433004c64f77826aea3152a0be734f1f5f0561c36fa189588350411dd28a45 HTTP/1.1" 200 - 6 0.003 0.010
+2024-03-09 12:30:27,062 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:27] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 16 0.011 0.012
+2024-03-09 12:30:27,242 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:27] "GET /websocket HTTP/1.1" 101 - 2 0.003 0.018
+2024-03-09 12:30:27,243 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:27] "POST /web/action/load HTTP/1.1" 200 - 10 0.012 0.136
+2024-03-09 12:30:27,270 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:27] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 20 0.150 0.026
+2024-03-09 12:30:27,517 1 INFO ? werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:27] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 0.008
+2024-03-09 12:30:27,565 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:27] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 33 0.059 0.036
+2024-03-09 12:30:27,633 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:27] "POST /mail/init_messaging HTTP/1.1" 200 - 75 0.102 0.064
+2024-03-09 12:30:27,677 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:27] "POST /mail/inbox/messages HTTP/1.1" 200 - 13 0.017 0.010
+2024-03-09 12:30:27,683 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:27] "POST /mail/load_message_failures HTTP/1.1" 200 - 13 0.016 0.015
+2024-03-09 12:30:30,511 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:30] "POST /web/action/load HTTP/1.1" 200 - 15 0.018 0.033
+2024-03-09 12:30:30,610 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:30] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 57 0.031 0.061
+2024-03-09 12:30:30,649 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:30] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 9 0.009 0.010
+2024-03-09 12:30:30,743 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:30] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 91 0.084 0.031
+2024-03-09 12:30:32,458 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-09 12:30:32,459 1 INFO test_odoo16 odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2024-03-09 12:30:32,461 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['real_estate_ads'] to user zulhaidirm11@gmail.com #2 via 172.20.0.1 
+2024-03-09 12:30:32,565 1 INFO test_odoo16 odoo.modules.loading: loading 1 modules... 
+2024-03-09 12:30:32,579 1 INFO test_odoo16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-03-09 12:30:32,611 1 INFO test_odoo16 odoo.modules.loading: updating modules list 
+2024-03-09 12:30:32,613 1 INFO test_odoo16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.20.0.1 
+2024-03-09 12:30:33,535 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-09 12:30:33,547 1 INFO test_odoo16 odoo.modules.loading: loading 75 modules... 
+2024-03-09 12:30:33,606 1 INFO test_odoo16 odoo.modules.loading: 75 modules loaded in 0.06s, 0 queries (+0 extra) 
+2024-03-09 12:30:33,609 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-09 12:30:33,610 1 INFO test_odoo16 odoo.modules.loading: Loading module real_estate_ads (2/76) 
+2024-03-09 12:30:33,749 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-09 12:30:33,786 1 INFO test_odoo16 odoo.modules.registry: module real_estate_ads: creating or updating database tables 
+2024-03-09 12:30:34,044 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/security/ir.model.access.csv 
+2024-03-09 12:30:34,064 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_views.xml 
+2024-03-09 12:30:34,126 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_type_view.xml 
+2024-03-09 12:30:34,166 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/views/property_tag_view.xml 
+2024-03-09 12:30:34,193 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/data/property_type_view.xml 
+2024-03-09 12:30:34,224 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/data/estate.property.type.csv 
+2024-03-09 12:30:34,234 1 INFO test_odoo16 odoo.modules.loading: Module real_estate_ads: loading demo 
+2024-03-09 12:30:34,235 1 INFO test_odoo16 odoo.modules.loading: loading real_estate_ads/demo/property_tag.xml 
+2024-03-09 12:30:34,292 1 INFO test_odoo16 odoo.modules.loading: Module real_estate_ads loaded in 0.68s, 284 queries (+284 other) 
+2024-03-09 12:30:34,293 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.68s, 284 queries (+284 extra) 
+2024-03-09 12:30:34,295 1 WARNING test_odoo16 odoo.modules.graph: module oxp: not installable, skipped 
+2024-03-09 12:30:34,298 1 INFO test_odoo16 odoo.modules.loading: loading 76 modules... 
+2024-03-09 12:30:34,299 1 INFO test_odoo16 odoo.modules.loading: 76 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-03-09 12:30:34,414 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-09 12:30:34,557 1 WARNING test_odoo16 odoo.fields: Field owl.todo.list.name: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-03-09 12:30:34,597 1 ERROR test_odoo16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['oxp'] 
+2024-03-09 12:30:35,305 1 INFO test_odoo16 odoo.modules.loading: Modules loaded. 
+2024-03-09 12:30:35,316 1 INFO test_odoo16 odoo.modules.registry: Registry loaded in 2.763s 
+2024-03-09 12:30:35,316 1 INFO test_odoo16 odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-03-09 12:30:35,324 1 INFO test_odoo16 odoo.modules.registry: Registry changed, signaling through the database 
+2024-03-09 12:30:35,327 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:35] "POST /web/dataset/call_button HTTP/1.1" 200 - 2384 1.519 1.359
+2024-03-09 12:30:35,359 1 INFO test_odoo16 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2024-03-09 12:30:36,287 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2024-03-09 12:30:36,290 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2024-03-09 12:30:36,291 1 WARNING test_odoo16 odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2024-03-09 12:30:36,299 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:36] "GET /web HTTP/1.1" 200 - 163 0.089 0.856
+2024-03-09 12:30:36,352 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:36] "GET /web/webclient/load_menus/ab3676c90db8f165557426a0d74bc39d48c669da02e877d9e9a38dd140ca7aad HTTP/1.1" 200 - 6 0.003 0.008
+2024-03-09 12:30:37,009 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:37] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 16 0.013 0.011
+2024-03-09 12:30:37,063 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:37] "POST /web/action/load HTTP/1.1" 200 - 10 0.014 0.015
+2024-03-09 12:30:37,067 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:37] "GET /websocket HTTP/1.1" 101 - 2 0.004 0.014
+2024-03-09 12:30:37,085 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:37] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 20 0.025 0.026
+2024-03-09 12:30:37,315 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:37] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 33 0.045 0.027
+2024-03-09 12:30:37,365 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:37] "POST /mail/init_messaging HTTP/1.1" 200 - 75 0.073 0.050
+2024-03-09 12:30:37,410 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:37] "POST /mail/inbox/messages HTTP/1.1" 200 - 13 0.018 0.011
+2024-03-09 12:30:37,419 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:37] "POST /mail/load_message_failures HTTP/1.1" 200 - 13 0.019 0.017
+2024-03-09 12:30:40,892 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:40] "POST /web/action/load HTTP/1.1" 200 - 13 0.022 0.035
+2024-03-09 12:30:40,956 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:40] "POST /web/dataset/call_kw/estate.property/get_views HTTP/1.1" 200 - 32 0.019 0.033
+2024-03-09 12:30:40,985 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:40] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 4 0.003 0.005
+2024-03-09 12:30:40,992 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:40] "POST /web/dataset/call_kw/estate.property/web_search_read HTTP/1.1" 200 - 6 0.007 0.009
+2024-03-09 12:30:43,183 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:43] "POST /web/action/load HTTP/1.1" 200 - 13 0.021 0.027
+2024-03-09 12:30:43,222 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:43] "POST /web/dataset/call_kw/estate.property.tag/get_views HTTP/1.1" 200 - 22 0.012 0.019
+2024-03-09 12:30:43,242 1 INFO test_odoo16 werkzeug: 172.20.0.1 - - [09/Mar/2024 12:30:43] "POST /web/dataset/call_kw/estate.property.tag/web_search_read HTTP/1.1" 200 - 9 0.005 0.004
