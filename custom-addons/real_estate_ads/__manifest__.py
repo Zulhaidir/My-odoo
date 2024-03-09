@@ -31,6 +31,7 @@
 
         # data files
         'data/property_type_view.xml',
+        'data/estate.property.type.csv',
     ],
     # only loaded in demonstration mode
     'demo': [
