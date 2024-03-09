@@ -24,7 +24,7 @@ class Property(models.Model):
         string="Garden Orientation", default='north')
     offer_ids = fields.One2many('estate.property.offer', 'property_id', string="Offers")
     sales_id = fields.Many2one('res.users', string="Salesman")
-    buyer_id = fields.Many2one('res.partner', string="Buyer")
+    buyer_id = fields.Many2one('res.partner', string="Buyer", domain=[('is_company', '=', True)])
     total_area = fields.Integer(string="Total Area")
     phone = fields.Char(string="Phone", related="buyer_id.phone")
 
