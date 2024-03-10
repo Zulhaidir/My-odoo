@@ -5,6 +5,13 @@ class Property(models.Model):
     _description = 'Estate Property'
 
     name = fields.Char(string="Name", required=True)
+    state = fields.Selection([
+        ('new', 'New'), 
+        ('received', 'Offer Received'), 
+        ('accepted', 'Offer Accepted'), 
+        ('sold', 'Sold'),
+        ('cancel', 'Cancelled'),
+    ], default='new', string="Status")
     tag_ids = fields.Many2many('estate.property.tag', string="Property Tag")
     type_id = fields.Many2one('estate.property.type', string="Property Type")
     description = fields.Text(string="Description")
@@ -27,10 +34,31 @@ class Property(models.Model):
     buyer_id = fields.Many2one('res.partner', string="Buyer", domain=[('is_company', '=', True)])
     total_area = fields.Integer(string="Total Area")
     phone = fields.Char(string="Phone", related="buyer_id.phone")
+    offer_count = fields.Integer(string="Offers", compute="_compute_offer_count")
+
+    def action_property_view_offers(self):
+        return {
+            'type': 'ir.actions.act_window',
+            'name': f"{self.name} - Offers",
+            'domain': [('property_id', '=', self.id)],
+            'view_mode': 'tree',
+            'res_model': 'estate.property.offer'
+        }
+
+    @api.depends('offer_ids')
+    def _compute_offer_count(self):
+        for rec in self:
+            rec.offer_count = len(rec.offer_ids)
 
     @api.onchange('living_area', 'garden_area')
     def _onchange_total_area(self):
         self.total_area = self.living_area + self.garden_area
+
+    def action_sold(self):
+        self.state = 'sold'
+
+    def action_cancel(self):
+        self.state = 'cancel'
 
 
 class PropertyType(models.Model):

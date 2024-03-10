@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Tree Property Offers -->
+        <record id="estate_property_offers_tree_view" model="ir.ui.view">
+            <field name="name">estate.property.offer.type.tree</field>
+            <field name="model">estate.property.offer</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="price"/>
+                    <field name="status"/>
+                    <field name="partner_id"/>
+                    <field name="property_id"/>
+                    <field name="creation_date"/>
+                    <field name="validity"/>
+                    <field name="deadline"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form Property Offers -->
+        <record id="estate_property_offers_form_view" model="ir.ui.view">
+            <field name="name">estate.property.offer.type.form</field>
+            <field name="model">estate.property.offer</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="price" />
+                                <field name="status"/>
+                                <field name="partner_id"/>
+                                <field name="property_id"/>
+                            </group>
+                            <group>
+                                <field name="creation_date"/>
+                                <field name="validity"/>
+                                <field name="deadline"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action Property Offers -->
+        <record id="action_property_offers" model="ir.actions.act_window">
+            <field name="name">Property Offers</field>
+            <field name="res_model">estate.property.offer</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="estate_property_offers_tree_view"/>
+        </record>
+
+        <!-- submenu property Offers -->
+        <menuitem
+            id="menu_property_offers"
+            name="Property Offers"
+            action="action_property_offers"
+            parent="menu_property_ads_settings"/>
+
+    </data>
+</odoo>

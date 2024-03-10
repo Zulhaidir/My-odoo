@@ -9,6 +9,7 @@ class PropertyOffer(models.Model):
     _name = 'estate.property.offer'
     _description = 'Estate Properties Offer'
 
+    name = fields.Char(string="Description", compute="_compute_name")
     price = fields.Float(string="Price")
     status = fields.Selection(
         [('accepted', 'Accepted'), ('refused', 'Refused')], 
@@ -23,6 +24,14 @@ class PropertyOffer(models.Model):
         return fields.Date.today()
 
     creation_date = fields.Date(string="Create Date", default=_set_create_date)
+
+    @api.depends('property_id', 'partner_id')
+    def _compute_name(self):
+        for rec in self:
+            if rec.property_id and rec.partner_id:
+                rec.name = f"{rec.property_id.name} - {rec.partner_id.name}"
+            else:
+                rec.name = False
 
     @api.onchange('validity', 'creation_date')
     def _onchange_deadline(self):

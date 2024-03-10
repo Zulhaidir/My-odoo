@@ -28,6 +28,7 @@
         'views/property_views.xml',
         'views/property_type_view.xml',
         'views/property_tag_view.xml',
+        'views/property_offer.view.xml',
 
         # data files
         'data/property_type_view.xml',
