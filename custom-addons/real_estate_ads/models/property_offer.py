@@ -35,10 +35,6 @@ class PropertyOffer(models.Model):
             else:
                 rec.validity = False
 
-    @api.constrains('validity')
-    def _check_validity(self):
-        for rec in self:
-            if rec.deadline == rec.creation_date:
-                raise ValidationError("Tanggal deadline tidak boleh sama dengan tanggal creation date")
-            if rec.deadline < rec.creation_date:
-                raise ValidationError("Tanggal deadline tidak boleh sebelum tanggal creation date")
+    _sql_constraints = [
+        ('check_validity', 'check(validity > 0)', 'Tanggal deadline tidak boleh sebelum tanggal creation date')
+    ]
