@@ -7,7 +7,8 @@ services:
     ports:
       - "8920:8069"
     tty: true
-    command: -- --dev all
+    # command: -- --dev all
+    command: -u real_estate_ads -d test_odoo16
     volumes:
       - kjs10-web:/var/lib/odoo
       - ./config:/etc/odoo

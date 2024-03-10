@@ -1,6 +1,9 @@
 from odoo import fields, models, api
 from datetime import timedelta
 from odoo.exceptions import ValidationError
+import logging
+
+_logger = logging.getLogger(__name__)
 
 class PropertyOffer(models.Model):
     _name = 'estate.property.offer'
@@ -35,6 +38,46 @@ class PropertyOffer(models.Model):
             else:
                 rec.validity = False
 
-    _sql_constraints = [
-        ('check_validity', 'check(validity > 0)', 'Tanggal deadline tidak boleh sebelum tanggal creation date')
-    ]
+    @api.constrains('validity')
+    def _check_validity(self):
+        for rec in self:
+            if rec.deadline == rec.creation_date:
+                raise ValidationError("Tanggal deadline tidak boleh sama dengan tanggal creation date")
+            if rec.deadline < rec.creation_date:
+                raise ValidationError("Tanggal deadline tidak boleh sebelum tanggal creation date")
+
+    @api.model_create_multi
+    def create(self, vals):
+        for rec in vals:
+            if not rec.get('creation_date'):
+                rec['creation_date'] = fields.Date.today()
+        return super(PropertyOffer, self).create(vals)
+
+    def write(self, vals):
+        _logger.info(f"ini adalah vals ===> {vals}")
+        _logger.info(f"ini adalah self ===> {self}")
+        _logger.info(f"ini adalah self.env.cr ===> {self.env.cr}")
+        _logger.info(f"ini adalah self.env.uid ===> {self.env.uid}")
+        _logger.info(f"ini adalah self.env.context ===> {self.env.context}")
+
+        res_partner_ids = self.env['res.partner'].search_count([
+            ('is_company', '=', True),
+        ])
+        _logger.info(f"ini adalah search count ===> {res_partner_ids}")
+
+        res_partner_ids_2 = self.env['res.partner'].search([
+            ('is_company', '=', True),
+        ], limit=1)
+        _logger.info(f"ini adalah search limit=1 ===> {res_partner_ids_2}")
+
+        res_partner_ids_3 = self.env['res.partner'].search([
+            ('is_company', '=', True),
+        ]).mapped('phone')
+        _logger.info(f"ini adalah search mapped phone ===> {res_partner_ids_3}")
+
+        res_partner_ids_4 = self.env['res.partner'].search([
+            ('is_company', '=', True),
+        ]).filtered(lambda x: x.phone == '(828)-316-0593')
+        _logger.info(f"ini adalah search filtered phone ===> {res_partner_ids_4}")
+
+        return super(PropertyOffer, self).write(vals)
