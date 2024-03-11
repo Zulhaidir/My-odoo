@@ -16,7 +16,7 @@ class PropertyOffer(models.Model):
         string="Status")
     partner_id = fields.Many2one('res.partner', string="Customer")
     property_id = fields.Many2one('estate.property', string="Property")
-    validity = fields.Integer(string="Validity")
+    validity = fields.Integer(string="Validity", default=7)
     deadline = fields.Date(string="Deadline", inverse="_inverse_deadline")
 
     @api.model
@@ -55,12 +55,31 @@ class PropertyOffer(models.Model):
             if rec.deadline < rec.creation_date:
                 raise ValidationError("Tanggal deadline tidak boleh sebelum tanggal creation date")
 
-    @api.model_create_multi
-    def create(self, vals):
-        for rec in vals:
-            if not rec.get('creation_date'):
-                rec['creation_date'] = fields.Date.today()
-        return super(PropertyOffer, self).create(vals)
+    def _validate_accepted_offer(self):
+        offer_ids = self.env['estate.property.offer'].search([
+            ('property_id', '=', self.property_id.id),
+            ('status', '=', 'accepted'),
+        ])
+        if offer_ids:
+            raise ValidationError("Hanya boleh satu Penawaran yang diterima")
+            
+    def action_accept_offer(self):
+        self._validate_accepted_offer()
+        if self.property_id:
+            self.property_id.write({
+                'selling_price': self.price,
+                'state': 'accepted',
+            })
+        self.status = 'accepted'
+    
+    def action_decline_offer(self):
+        if all(self.property_id.offer_ids.mapped('status')):
+            self.property_id.write({
+                'selling_price': 0,
+                'state': 'received',
+            })
+        self.status = 'refused'
+        
 
     def write(self, vals):
         _logger.info(f"ini adalah vals ===> {vals}")
