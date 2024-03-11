@@ -28,10 +28,40 @@
                     <group expand="0" string="Group By">
                         <filter string="Status" name="grop_by_state" context="{'group_by': 'state'}"/>
                     </group>
-                    <searchpanel>
-                        <field name="state" icon="fa-filter" groupby="group_by_state" limit="0"/>
-                    </searchpanel>
                 </search>
+            </field>
+        </record>
+
+        <!-- Kanban Property -->
+        <record id="estate_property_kanban_view" model="ir.ui.view">
+            <field name="name">estate.property.kanban</field>
+            <field name="model">estate.property</field>
+            <field name="arch" type="xml">
+                <kanban default_group_by="state" on_create="quick_create" quick_create_view="real_estate_ads.quick_create_estate_property_form_view">
+                    <field name="name"/>
+                    <field name="state"/>
+                    <field name="postcode"/>
+                    <field name="buyer_id"/>
+                    <template>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click">
+                                <div class="oe_kanban_details">
+                                    <strong class="o_kanban_record_title">
+                                        <field name="name"/>
+                                    </strong>
+                                    <div class="o_kanban_tags_section">
+                                        <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                                    </div>
+                                    <div class="o_kanban_record_bottom">
+                                        <div class="oe_kanban_bottom_left">
+                                            <field name="offer_count"/> Offers(s)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </template>
+                </kanban>
             </field>
         </record>
 
@@ -49,6 +79,19 @@
                     <field name="best_offer"/>
                     <field name="selling_price"/>
                 </tree>
+            </field>
+        </record>
+
+        <!-- Quick Create Kanban Form Property -->
+        <record id="quick_create_estate_property_form_view" model="ir.ui.view">
+            <field name="name">estate.property.form</field>
+            <field name="model">estate.property</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
             </field>
         </record>
 
@@ -130,8 +173,8 @@
         <record id="action_property" model="ir.actions.act_window">
             <field name="name">Property</field>
             <field name="res_model">estate.property</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="estate_property_tree_view"/>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="view_id" ref="estate_property_kanban_view"/>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                     Buat Property Advertise !!!
