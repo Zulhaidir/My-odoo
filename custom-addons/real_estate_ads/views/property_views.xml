@@ -10,6 +10,31 @@
             <!-- <field name="domain">[('property_id', '=', active_id)]</field> -->
         </record>
 
+        <!-- Search Property -->
+        <record id="estate_property_search_view" model="ir.ui.view">
+            <field name="name">estate.property.search</field>
+            <field name="model">estate.property</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="state"/>
+                    <field name="postcode"/>
+                    <field name="buyer_id"/>
+                    <filter string="New" name="new_state" domain="[('state', '=', 'new')]"/>
+                    <filter string="Sold" name="sold_state" domain="[('state', '=', 'sold')]"/>
+                    <filter string="Received Offer" name="received_state" domain="[('state', '=', 'received')]"/>
+                    <filter string="Accepted Offer" name="accepted_state" domain="[('state', '=', 'accepted')]"/>
+                    <separator/>
+                    <group expand="0" string="Group By">
+                        <filter string="Status" name="grop_by_state" context="{'group_by': 'state'}"/>
+                    </group>
+                    <searchpanel>
+                        <field name="state" icon="fa-filter" groupby="group_by_state" limit="0"/>
+                    </searchpanel>
+                </search>
+            </field>
+        </record>
+
         <!-- Tree Property -->
         <record id="estate_property_tree_view" model="ir.ui.view">
             <field name="name">estate.property.tree</field>

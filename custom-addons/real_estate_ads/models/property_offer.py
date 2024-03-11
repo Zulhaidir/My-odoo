@@ -5,20 +5,9 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
-class TransientOffers(models.TransientModel):
-    _name = 'transient.model.offers'
-    _description = 'Transient Offers'
-
-    @api.autovacuum
-    def _transient_vacuum(self):
-        pass
-
-    partner_email = fields.Char(string="Email")
-    partner_phone = fields.Char(string="Phone")
 
 class PropertyOffer(models.Model):
     _name = 'estate.property.offer'
-    _inherit = ['transient.model.offers']
     _description = 'Estate Properties Offer'
 
     name = fields.Char(string="Description", compute="_compute_name")
