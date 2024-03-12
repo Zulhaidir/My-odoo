@@ -27,6 +27,7 @@
         # groups
         'security/ir.model.access.csv',
         'security/res_groups.xml',
+        'security/model_access.xml',
 
         # views
         'views/property_views.xml',
