@@ -9,6 +9,7 @@
             <field name="arch" type="xml">
                 <tree string="">
                     <field name="name"/>
+                    <field name="color" widget="color_picker"/>  
                 </tree>
             </field>
         </record>
@@ -22,7 +23,7 @@
                     <sheet>
                         <group>
                             <field name="name"/>  
-                            <field name="color" invisible="1"/>  
+                            <field name="color" widget="color_picker"/>  
                         </group>
                     </sheet>
                 </form>
