@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates>
+    <t t-name="CustomActionTemplate">
+        <div>
+            <h3>Custom Actions</h3>
+        </div>
+    </t>
+</templates>

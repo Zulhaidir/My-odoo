@@ -224,6 +224,12 @@
             </field>
         </record>
 
+        <!-- Action Property Testing -->
+        <record id="action_custom_client_action" model="ir.actions.client">
+            <field name="name">Custom Client Action</field>
+            <field name="tag">custom_client_action</field>
+        </record>
+
         <!-- root menu -->
         <menuitem
             id="menu_root_property_ads"
@@ -243,6 +249,13 @@
             name="Property"
             action="action_property"
             parent="menu_property_ads"/>
+
+        <!-- submenu testing property -->
+        <menuitem
+            id="menu_test_client_action"
+            name="Testing Client Action"
+            action="action_custom_client_action"
+            parent="menu_property_ads_settings"/>
         
     </data>
 </odoo>
