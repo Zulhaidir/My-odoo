@@ -53,6 +53,13 @@ class Property(models.Model):
             else:
                 rec.best_offer = 0
 
+    def action_url_action(self):
+        return {
+            'type': 'ir.actions.act_url',
+            'url': 'https://odoo.com',
+            'target': 'new',
+        }
+
     @api.depends('offer_ids')
     def _compute_offer_count(self):
         for rec in self:
